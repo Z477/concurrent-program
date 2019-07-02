@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-Module Description
+Use asyncio to implement asynchronous
  
 Created on Jun 29, 2019
 @author: siqi.zeng

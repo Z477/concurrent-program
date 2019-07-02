@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-Module Description
+Prove the existence of GIL
 
 Created on Jun 28, 2019
 @author: siqi.zeng

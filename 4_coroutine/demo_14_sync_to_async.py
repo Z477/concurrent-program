@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-Module Description
+Synchronous method to asynchronous method
  
 Created on Jul 01, 2019
 @author: siqi.zeng

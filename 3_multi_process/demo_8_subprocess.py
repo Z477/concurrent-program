@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-Module Description
+Use subprocess to implement multi process
  
 Created on Jun 29, 2019
 @author: siqi.zeng

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-Module Description
+use with Context manager
 
 Created on Jun 28, 2019
 @author: siqi.zeng
@@ -49,13 +49,9 @@ class clear_body(Thread):
 
 
 def main():
-    thread1 = clear_body("A")
-    thread2 = clear_body("B")
-    thread3 = clear_body("C")
-    thread1.start()
-    thread2.start()
-    thread3.start()
+    thread_list = [clear_body("A"), clear_body("B"), clear_body("C")]
+    for thread in thread_list:
+        thread.start()
 
 
-if __name__ == '__main__':
-    main()
+main()

@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-Use _thread to implement multi thread
-
-Created on Jun 28, 2019
+Serial execution
+ 
+Created on Jul 02, 2019
 @author: siqi.zeng
-@change: Jun 28, 2019 siqi.zeng: initialization
+@change: Jul 02, 2019 siqi.zeng: initialization
 '''
-import _thread
 import logging
 from time import sleep
 
@@ -15,8 +14,6 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s [line:%(lineno)d] %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S')
-
-mylock = _thread.allocate()
 
 
 def take_shower(name):
@@ -31,20 +28,10 @@ def dress_in_room(name):
     logging.info("%s finish dress", name)
 
 
-def clear_body(name):
-    take_shower(name)
-    logging.info("%s is waiting for dress", name)
-    mylock.acquire()
-    dress_in_room(name)
-    mylock.release()
-
-
 def main():
-    _thread.start_new_thread(clear_body, ("A",))
-    _thread.start_new_thread(clear_body, ("B",))
-    _thread.start_new_thread(clear_body, ("C",))
-    # wait all thread end
-    sleep(10)
+    for name in ["A", "B", "C"]:
+        take_shower(name)
+        dress_in_room(name)
 
 
 main()

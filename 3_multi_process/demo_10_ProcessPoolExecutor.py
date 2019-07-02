@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-Module Description
+Use concurrent.futures to implement multi process
 
 Created on Jun 30, 2019
 @author: siqi.zeng

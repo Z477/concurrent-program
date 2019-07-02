@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-Module Description
+Use threading to implement multi thread
  
 Created on Jun 28, 2019
 @author: siqi.zeng

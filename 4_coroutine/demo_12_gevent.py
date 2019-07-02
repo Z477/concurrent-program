@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 '''
-Module Description
+Use gevent to implement asynchronous
  
 Created on Jun 30, 2019
 @author: siqi.zeng
@@ -23,7 +23,7 @@ def take_shower(name):
     logging.info("%s is go to take shower", name)
     sleep(1)
     logging.info("%s is go to clean hair", name)
-    gevent.sleep(2)
+    gevent.sleep(1)
     logging.info("%s finish clean hair", name)
     sleep(1)
     logging.info("%s finish take shower", name)
